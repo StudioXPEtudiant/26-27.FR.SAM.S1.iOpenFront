@@ -1,0 +1,30 @@
+# Fichiers de configuration spécifiques à l'utilisateur (mises en page de l'éditeur, etc.)
+.godot/
+
+# Fichiers de cache et d'importation générés automatiquement par Godot 4
+# (Ne pas versionner, car Godot les recrée automatiquement)
+.godot/imported/
+
+# Fichiers d'exportation de builds (si vous exportez dans ces dossiers à la racine)
+*.apk
+*.ap_
+*.aab
+*.exe
+*.dll
+*.app
+*.dmg
+*.zip
+*.tar.gz
+*.pck
+
+# Dossiers d'export personnalisés courants (optionnel, selon votre organisation)
+/build/
+/exports/
+
+# Fichiers temporaires ou spécifiques aux OS / Éditeurs tiers
+.DS_Store
+Thumbs.db
+*.tmp
+.vs/
+.vscode/
+.idea/
