@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cfxmogskx170"]
+
+[ext_resource type="Script" uid="uid://4rfbn1oiembe" path="res://Camera/camera_position.gd" id="1_nk4cm"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gh8n0"]
+
+[node name="TestCamera" type="Node3D" unique_id=1937594114]
+
+[node name="CameraPosition" type="Node3D" parent="." unique_id=649881197]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1.0000001, 0, 7.055226, 7.1711144)
+script = ExtResource("1_nk4cm")
+
+[node name="CameraRotationX" type="Node3D" parent="CameraPosition" unique_id=212861127]
+transform = Transform3D(1, 0, 0, 0, 0.76604456, 0.64278764, 0, -0.6427876, 0.76604444, 0, 0, 0)
+
+[node name="CameraZoomPivot" type="Node3D" parent="CameraPosition/CameraRotationX" unique_id=696233190]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPosition/CameraRotationX/CameraZoomPivot" unique_id=342477360]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1015922443]
+transform = Transform3D(11.54894, 0, 0, 0, 1.0000005, 0, 0, 0, 10.065115, 0, 0, 0)
+mesh = SubResource("PlaneMesh_gh8n0")

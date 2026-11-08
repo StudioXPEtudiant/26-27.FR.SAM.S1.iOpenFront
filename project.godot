@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="iOpenFront"
-run/main_scene="res://drag_drop_world.tscn"
+run/main_scene="uid://cfxmogskx170"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Ui/icon.svg"
 
 [display]
 
