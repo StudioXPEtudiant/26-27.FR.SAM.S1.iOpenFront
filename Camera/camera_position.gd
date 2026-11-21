@@ -10,21 +10,19 @@ var move_speed = 10.0
 var move_target: Vector3
 
 # Variables rotation
-var rotate_keys_speed = 60.0
+var rotate_keys_speed = 80.0
 var rotate_keys_target: float
 
 # Variables zoom
-var zoom_speed = 2.5
+var zoom_speed = 3.0
 var zoom_target: float
-var min_zoom = -0.0
-var max_zoom = 100.0
-
+var min_zoom = -5.0
+var max_zoom = 40.0
 
 func _ready() -> void:
 	move_target = position
 	rotate_keys_target = rotation.y
 	zoom_target = camera.position.z
-
 
 func _process(delta: float) -> void:
 
